@@ -1,0 +1,107 @@
+:root {
+    --swiper-theme-color: #d67481;
+}
+  html,
+  body {
+    position: relative;
+    height: 100%;
+  }
+
+  body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+
+  .swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+   
+  }
+
+  .swiper-slide {
+   background-position: center;
+    background-size: cover;
+    width: 300px;
+   /* height:550px; */
+   border-radius: 20px;
+    box-shadow: 5px 10px 20px 0px rgba(196,196,196,0.75);
+    -webkit-box-shadow: 5px 0px 20px 0px rgba(196, 196, 196, 0.75);
+    -moz-box-shadow: 5px 0px 20px 0px rgba(196,196,196,0.75);
+    & .card{
+      padding: 2rem;
+      border-radius: 20px;
+      background-color:#f7edec;
+      position: relative;
+  
+   
+      & .title{
+          font-size: 19px;
+          font-weight: bold;
+          color:#2d1025;
+      }
+      & .name-blush{
+          font-size: 16px;
+          font-weight: 600;
+          text-align: center;
+          color:#d67481;
+      }
+      & img{
+          object-fit: cover;
+          object-position: center;
+          border-radius: 8px;
+      
+     
+      }
+      & .price{
+          
+          color:#2d1025;
+          font-size: 20px;
+          font-weight: bold;
+      }
+      & .icon{
+        position: absolute;
+        bottom: 56px;
+        left: 177px;
+        & i{
+          color:gold;
+          
+        }
+      }
+      & .btn-open{
+        background-color: #d67481;
+        color:#f7edec;
+        padding: 9px;
+        border: none;
+       font-size: 16px;
+       border-radius: 3px 10px ;
+       position: absolute;
+       right: 89px;
+       bottom: 13px;
+       margin-top: 2px;
+       margin-top: 5px;
+       
+       &:hover{
+        cursor: pointer;
+        transition: color .4s;
+       }
+       
+      }
+  }
+   
+  }
+
+  .swiper-slide img {
+   display: block;
+    
+    
+  }
+  .swiper-pagination{
+    & span{
+      color:#d67481;
+    }
+  }
