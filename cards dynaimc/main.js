@@ -62,6 +62,8 @@
 ];
 const imgModel=[{
   src:"./images/lovecake.jpg",
+  src:"./images/hush.jpg",
+  src:"./images/birthdaysuit.jpg"
 
 }]
 
@@ -103,9 +105,13 @@ const myModalAlternative = new bootstrap.Modal("#exampleModal", {
    // backdrop: false,
 });
 function fun(src) {
+
+  for(let i=0;i<imgModel.length;i++){
   myModalAlternative.show();
+
   myModal.addEventListener("shown.bs.modal", () => {
     const modalBody = document.querySelector(".modal-body");
-  modalBody.innerHTML = `<img width="80%" height="50%" src="${imgModel.src}}" />`
-  });
+    console.log(imgModel[i])
+  modalBody.innerHTML = `<img width="80%" height="50%" src="${imgModel[i].src}" />`
+  });}
 }
